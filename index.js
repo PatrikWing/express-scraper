@@ -5,7 +5,7 @@ require("dotenv").config()
 const express = require("express")
 const expressApp = express()
 expressApp.use(express.json())
-const port = process.env.PORT
+const port = process?.env?.PORT || 5000 
 
 /* CORS */
 const cors = require("cors")
